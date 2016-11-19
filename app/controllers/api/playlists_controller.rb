@@ -14,7 +14,7 @@ module API
 
     def playlist
       authenticate
-      playlists = RSpotify::Playlist.search(params[:genre], limit: 20)
+      playlists = RSpotify::Playlist.search(params[:genre] || 'rock', limit: 20)
       playlists[(0..19).to_a.sample]
       # playlists[(0..19).to_a.sample].external_urls["spotify"]
     end

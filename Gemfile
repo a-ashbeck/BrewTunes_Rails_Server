@@ -28,6 +28,9 @@ gem 'jbuilder', '~> 2.5'
 # Gem for RSpotify
 gem 'rspotify'
 
+# Gem for rack-cors
+gem 'rack-cors', require: 'rack/cors'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
