@@ -7,7 +7,7 @@ module API
     CLIENT_SECRET = 'd6a31e2b3550463ca01b09b6418ac554'.freeze
 
     def index
-      render json: playlist, status: 200
+      render json: playlist, status: :ok
     end
 
     private
@@ -16,7 +16,6 @@ module API
       authenticate
       playlists = RSpotify::Playlist.search(params[:genre] || 'rock', limit: 20)
       playlists[(0..19).to_a.sample]
-      # playlists[(0..19).to_a.sample].external_urls["spotify"]
     end
 
     def authenticate
