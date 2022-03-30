@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'pg'
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 4.3'
 gem 'rack-cors', require: 'rack/cors'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'rspotify', '~> 1.27'
